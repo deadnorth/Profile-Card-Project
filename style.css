@@ -1,0 +1,202 @@
+:root {
+	--card-width: 320px;
+	--image-width: calc(var(--card-width) / 1.5);
+	--banner-width: 300px 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cambria Bold', 'Cambria Math', Calibri, 'Constantia', sans-serif;
+}
+
+main {
+	min-height: 100vh;
+	background-size: 400% 400%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	max-width: var(--card-width);
+	background-color: #c12411;
+        color: #3F5366;
+      
+	  border-collapse: collapse;
+	  border-radius: 1rem;
+	padding: 1.5rem;
+	text-align: center;
+	box-shadow	: 0 3px 6px rgba(0, 0, 0, 0.1);
+	transition: 0.4s;
+}
+
+.card {
+	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.card .image {
+	position: relative;
+	margin: -8rem auto 1.5rem;
+	width: var(--image-width);
+	height: var(--image-width);
+	border-radius: 50%;
+	box-shadow: 0 3px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	transition: 0.4s;
+	overflow: hidden;
+	padding: 0.25rem;
+}
+
+.card .image {
+	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card .image img {
+	width: 100%;
+	border-radius: 50%;
+	transition: 0.4s;
+	border: 3px solid var(--primary);
+}
+
+.card:hover {
+	--card-width: 480px;
+	--image-width: calc(var(--card-width) / 2);
+}
+
+.card:hover .image {
+	margin-top: -4rem;
+	border-radius: 2rem;
+}
+
+.card:hover .image img {
+	border-radius: 2rem;
+}
+
+li {
+    transition: 0.4s;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+li:hover {
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	transform: translateY(-0.5rem) scale(1.15);
+}
+
+ul{
+    transition: 0.4s;
+	display: inline-block;
+}
+
+ul:hover {
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	transform: translateY(-0.5rem) scale(1.15);
+}
+
+.card .name {
+	color: var(--grey);
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.card .content {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: 0.4s;
+margin-top: 1rem;
+}
+
+.card .content p {
+	color: var(--grey);
+	font-size: 1.250rem;
+}
+
+.card:hover .content {
+	max-height: 300px;
+	opacity: 1;
+	overflow: visible;
+}
+
+.card .buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.card .buttons button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	background-color: var(--primary);
+	color: #3F5366;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 0 0.5rem;
+	min-width: 160px;
+	transition: 0.4s;
+}
+
+.card .buttons button:hover {
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	transform: translateY(-0.5rem) scale(1.15);
+}
+

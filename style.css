@@ -21,7 +21,7 @@ main {
 }
 
 body {
-	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background: linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
 }
@@ -42,8 +42,8 @@ body {
 	position: relative;
 	width: 100%;
 	max-width: var(--card-width);
-	background-color: #c12411;
-        color: #3F5366;
+	background-color: #fcab02;
+        color: #48756d;
       
 	  border-collapse: collapse;
 	  border-radius: 1rem;
@@ -54,7 +54,7 @@ body {
 }
 
 .card {
-	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background: linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
 }
@@ -78,14 +78,14 @@ body {
 	width: var(--image-width);
 	height: var(--image-width);
 	border-radius: 50%;
-	box-shadow: 0 3px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	box-shadow: 0 3px 6px linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	transition: 0.4s;
 	overflow: hidden;
 	padding: 0.25rem;
 }
 
 .card .image {
-	background: linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	background: linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
 }
@@ -130,7 +130,7 @@ li {
 }
 
 li:hover {
-	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	transform: translateY(-0.5rem) scale(1.15);
 }
 
@@ -140,7 +140,7 @@ ul{
 }
 
 ul:hover {
-	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	transform: translateY(-0.5rem) scale(1.15);
 }
 
@@ -187,7 +187,7 @@ margin-top: 1rem;
 	padding: 0.5rem 1rem;
 	border-radius: 1rem;
 	background-color: var(--primary);
-	color: #3F5366;
+	color: #474747;
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin: 0 0.5rem;
@@ -196,7 +196,7 @@ margin-top: 1rem;
 }
 
 .card .buttons button:hover {
-	box-shadow: 0 2px 6px linear-gradient(-45deg, #c12411, #1e2932, #000000, #6D291E);
+	box-shadow: 0 2px 6px linear-gradient(-45deg, #fcab02, #72b3af, #e2ebea, #b4e0fc);
 	transform: translateY(-0.5rem) scale(1.15);
 }
 
